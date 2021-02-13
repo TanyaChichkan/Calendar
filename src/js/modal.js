@@ -1,7 +1,8 @@
+import constants from './constants';
 import {modalOpen} from './refs';
 
 export const closeModal=()=>{
-    modalOpen.style.display="none";
+    modalOpen.style.display=constants.NONE;
 };
 
 export const modalCloser=e=>{
@@ -16,6 +17,6 @@ export const modalCloser=e=>{
 
 export const modalOpener=e=>{
     e.target.classList.contains("button-create") ? 
-    modalOpen.style.display="block" : "";
+    modalOpen.style.display=constants.BLOCK : "";
 
 }

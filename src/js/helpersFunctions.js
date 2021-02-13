@@ -53,12 +53,10 @@ export const notificationAlert =()=>{
 };
 
 export const resetMeeting=()=>{
-    let {eventName,day,time,participants} = meeting;
-
-    eventName="";
-    day="";
-    time="";
-    participants="";
+    meeting.eventName="";
+    meeting.day="";
+    meeting.time="";
+    meeting.participants="";
 }
 
 export const dataVerification=()=>{

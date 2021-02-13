@@ -13,10 +13,10 @@ let index2;
 let cell;
 
 
-export const handlerDelete=({target:{dataset}})=>{
+export const handlerDelete=({target})=>{
     const updatedArr = [...getFromLocalStorage()];
 
-    if(dataset.index ==="yes"){
+    if(target.dataset.index ==="yes"){
         const filteredArr= updatedArr.filter(item=> {
             
             return item.row+1 != index2 && item.col+1!=index1
@@ -28,7 +28,7 @@ export const handlerDelete=({target:{dataset}})=>{
         setToLocalStorage(filteredArr);
         deleteMessage.style.display=constants.NONE;
         
-    } if(dataset.index ==="no"){
+    } if(target.dataset.index ==="no"){
         deleteMessage.style.display=constants.NONE;
         setToLocalStorage(updatedArr);
     }
@@ -51,8 +51,8 @@ export const deleteEvent=({target})=>{
 
 };
 
-export const selectorHandler=({target:{value}})=>{
-    input = value;
+export const selectorHandler=({target})=>{
+    input = target.value;
     const updatedArr = getFromLocalStorage()
     filterByName([...updatedArr]);
 };
@@ -60,9 +60,9 @@ export const selectorHandler=({target:{value}})=>{
 export const handlerFormSubmit=(e)=>{
     e.preventDefault();
 
-    const {target:{dataset}} = e;
+    const {target} = e;
 
-        if(dataset.name==="create"){
+        if(target.dataset.name==="create"){
             const updatedArr = [...getFromLocalStorage()];
             const values = Object.values(meeting);
             
