@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Meeting calendar</title>
+
+    <body>
+      <header>
+        <div class="container">
+          <h1 class="page-title">Calendar</h1>
+          <div class="button-wrapper">
+            <select name="members" id="members" class="name-selector">
+                <option value="Select participants" selected>Select participants</option>
+                <option value="All">All members</option>
+                <option value="Maria">Maria</option>
+                <option value="Colin">Colin</option>
+                <option value="Tina">Tina</option>
+
+            </select>
+            <button class="button-create button">New event +</button>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+                <tr >
+                    <td>10:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+      </section>
+
+        <div class="overlay">
+            <div class="modal">
+
+                <svg class="icon-wrapper">
+                  <use href="./images/symbol-defs.svg#icon-close" class="icon-close"></use>
+                </svg>
+
+                <form class="form">
+                  <div class="form-wrapper">
+                    <div class="label-wrapper">
+                      <label for="eventName" class="label">Name of the event:</label>
+                      <label for="participants" class="label">Participants: </label>
+                      <label for="day" class="label">Day:</label>
+                      <label for="day" class="label">Time:</label>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <input type="text" name="eventName" id="eventName" class="input" placeholder="Enter event name"/>
+
+                        <select id="participants" name="participants" class="form-select select" >
+                          <option value="Select participants" selected>Select participants</option>
+                          <option value="Maria,Bob,Alex">Maria,Bob,Alex</option>
+                          <option value="Colin,Tina">Colin,Tina</option>
+                          <option value="All">All</option>
+                        </select>
+
+                        <select id="day" name="day" class="form-select select" >
+                          <option value="Select day" selected>Select day</option>
+                          <option value="Monday">Monday</option>
+                          <option value="Tuesday">Tuesday</option>
+                          <option value="Wednesday">Wednesday</option>
+                          <option value="Thursday">Thursday</option>
+                          <option value="Friday">Friday</option>
+                          <option value="Saturday">Saturday</option>
+                          <option value="Sunday">Sunday</option>
+                      </select>
+
+                      <select id="time" name="time" class="form-select select" >
+                        <option value="Select time" selected>Select time</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                      </select>
+
+                    </div>
+
+                  </div>
+
+                  <div class="form-button-wrapper">
+                    <button type="submit" class="button-submitter button" data-name="create">Create</button>
+                    <button type="button" class="button" data-name="cancel">Cancel</button>
+                  </div> 
+                  <span class="notification"></span>
+                  <!-- <div class="input-wrapper">
+                    <label for="eventName" class="label">Name of the event: 
+                        <input type="text" name="eventName" id="eventName" class="input"/>
+                    </label>
+                  </div>
+    
+                  <div class="input-wrapper">
+                    <label for="participants" class="label">Participants: 
+                        <select id="participants" name="participants">
+                            <option value="Select participants" selected>Select participants</option>
+                            <option value="Maria,Bob,Alex">Maria,Bob,Alex</option>
+                            <option value="Colin,Tina">Colin,Tina</option>
+                            <option value="All">All</option>
+                        </select>
+                    </label>
+                  </div>
+    
+                  <div class="input-wrapper">
+                    <label for="day" class="label">Day: 
+                        <select id="day" name="day">
+                            <option value="Select day" selected>Select day</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                    </label>
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="time" class="label">Time: 
+                        <select id="time" name="time">
+                            <option value="Select time" selected>Select time</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                        </select>
+                    </label>
+                  </div> -->
+    
+                </form>
+
+            </div>
+
+            <div class="alert-message">
+              <span>&#9940;</span>
+              <p class="alert-text">Failed to create an event. Time slot is already booked!!!</p>
+              <span class="alert-close">&#10005;</span>
+            </div>
+        </div>
+  
+      <div class="delete-message" style="display:none">
+          <p class="delete-message-text"></p>
+          <div class="button-wrapper">
+            <button data-index="yes" type="button" class="button button-secondary">Yes</button>
+            <button data-index="no"  type="button" class="button button-secondary">No</button>
+          </div>
+        </div>
+  
+
+  </body>
+</html>

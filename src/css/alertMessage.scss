@@ -1,0 +1,23 @@
+.alert{
+
+    &-message{
+
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+
+    display: none;
+    background-color: pink;
+    color: red;
+    }
+
+    &-text{
+        margin:0;
+        margin-left: 15px;
+    }
+
+    &-close{
+        display: block;
+        margin-left: auto;
+    }
+}

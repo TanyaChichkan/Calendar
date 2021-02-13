@@ -1,0 +1,253 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td, th {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  width: 150px;
+  height: 40px;
+}
+
+th {
+  background-color: lightgray;
+}
+
+td {
+  text-align: center;
+}
+
+.delete-event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  padding-left: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.delete-cross {
+  color: #999292;
+  margin-left: auto;
+}
+
+header {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1224px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin: 0;
+}
+
+.button {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+select {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(#767676, #858585);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+
+.modal {
+  background-color: white;
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+.icon-close {
+  fill: grey;
+}
+
+.icon-wrapper {
+  width: 20px;
+  position: absolute;
+  top: -55px;
+  right: 10px;
+}
+
+.notification {
+  display: none;
+  color: red;
+  font-weight: 500;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-button-wrapper {
+  margin-left: auto;
+}
+
+.form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.form-select {
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(#767676, #858585);
+  margin-bottom: 10px;
+}
+
+.input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.label {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.label:last-child {
+  margin-bottom: 0;
+}
+
+.label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+}
+
+.alert-message {
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+  display: none;
+  background-color: pink;
+  color: red;
+}
+
+.alert-text {
+  margin: 0;
+  margin-left: 15px;
+}
+
+.alert-close {
+  display: block;
+  margin-left: auto;
+}
+
+.delete-message {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 350px;
+  height: 150px;
+  padding: 10px;
+  background-color: lightgray;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.delete-message-text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.button-secondary {
+  background-color: white;
+  color: black;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.button-secondary:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=main.css.map */
