@@ -1,101 +1,68 @@
-# Webpack starter kit &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+# Meeting calendar planner &middot; [![Build Status](https://user-images.githubusercontent.com/30186107/29488525-f55a69d0-84da-11e7-8a39-5476f663b5eb.png)
 
-## Developing
+## Starting the app
 
-### Prerequisites
+### Description
 
-Для корректной работы SASS-компилятора и других инструментов, необходимо один
-раз глобально поставить дополнительные пакеты, выполнив в терминале следующие
-команды. Пользователям MacOS ничего делать не нужно.
+This calendar  is created for your accurate meeting planning within work or personal appointments.
+It gives several options for an event creation/ choosing participants/ deleting an event/ filtering by names.
 
-Пользователям **Windows**, в режиме администратора.
-[Как запусттить Powershell](https://youtu.be/p2tFnxcymwk) в режиме
-администратора.
+### Setting up 
 
-```shell
-npm install --global --production windows-build-tools
-```
-
-Вот как выглядит процесс успешной установки для пользователей **Windows**.
-
-![Установка windows-build-tools](https://user-images.githubusercontent.com/1426799/45007904-bde9f280-afb4-11e8-8a35-c77dffaffa2a.gif)
-
-Пользователям **Linux**.
+&middot; To start working with the app on your computer, you should first clone/download the repository from GitHub
 
 ```shell
-sudo apt-get install gcc g++ make
+git clone https://github.com/TanyaChichkan/Calendar
 ```
 
-### Setting up Dev
-
-Для быстрого старта необходимо склонировать репозиторий.
-
-```shell
-git clone https://github.com/luxplanjay/webpack-starter-kit.git
-```
-
-Переименовать папку сборки именем вашего проекта.
-
-```shell
-mv webpack-starter-kit имя_проекта
-```
-
-Затем перейти в папку проекта.
-
-```shell
-cd имя_проекта
-```
-
-Находясь в папке проекта удалить папку `.git` связанную с репозиторием сборки
-выполнив следующую команду.
-
-```shell
-npx rimraf .git
-```
-
-Установить все зависимости.
+Move to the project's folder and run the following command to install all the dependencies.
 
 ```shell
 npm install
 ```
 
-И запустить режим разработки.
+Afterwards, start the app on the server.
 
 ```shell
 npm start
 ```
 
-Во вкладке браузера перейти по адресу
+&middot; To run the app from the browser, follow the link https://tanyachichkan.github.io/Calendar/
+
+Follow the link in your browser
 [http://localhost:4040](http://localhost:4040).
 
-### Building
+### General information
 
-Для того чтобы создать оптимизированные файлы для хостинга, необходимо выполнить
-следующую команду. В корне проекта появится папка `build` со всеми
-оптимизированными ресурсами.
+The planner looks like a schedule in the form of a table, containing time slots (from 10:00 to 18:00) and weekdays (from Mon to Sun).
+The scheduler is empty, as you first start working with it. Once the time slot with certain time and day is booked, it'll be shown in
+the table as a green colored cell. There is also a button for a meeting creation and a filter with a possibility to filter the 
+events by participants.
 
-```shell
-npm run build
-```
 
-### Deploying/Publishing
+### Generating an event
+To generate a new event, press the button "New event+" from the top right corner. Afterwards, you'll be able to see a window for a meeting creation. All the fields have to be completed ("Day","Time","Participants","Name of the event"). The first three options 
+are to be chosen from the list. Name of the event is typed manually. Type the name carefully, as once it's saved, you'll have no possibility to edit it, except for its deletion and adding a new one. 
 
-Сборка может автоматически деплоить билд на GitHub Pages удаленного (remote)
-репозитория. Для этого необходимо в файле `package.json` отредактировать поле
-`homepage`, заменив имя пользователя и репозитория на свои.
+For successful event creation, all the fields must be completed, otherwise, you'll see a notification in red, informing that some fields were missed.
 
-```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория"
-```
+If you choose a time slot and a day, already booked, you'll see a notification with the following text "Failed to create an event.
+Time slot is already booked", meaning you have to choose another day and time option.
 
-После чего в терминале выполнить следующую команду.
 
-```shell
-npm run deploy
-```
+### Saving an event
+To save the event, press the button "Create". If "Cancel" button is pressed or the icon of cross(in the right top corner of the form, the window is closed, and no meeting is saved. You'll be redirected back to the main page. 
 
-Если нет ошибок в коде и свойство `homepage` указано верно, запустится сборка
-проекта в продакшен, после чего содержимое папки `build` будет помещено в ветку
-`gh-pages` на удаленном (remote) репозитории. Через какое-то время живую
-страницу можно будет посмотреть по адресу указанному в отредактированном
-свойстве `homepage`.
+If the meeting was generated, it'll be added to the schedule table, withe event's name (from "Name of the event") and a cross-icon, giving a possibility for its further deletion.
+
+
+### Event deletion
+On the main page with the table and all the meetings planned, press a cross-icon on the corresponding event you want to delete.
+If the meeting is to be deleted, in the window ("Are you sure you want to delete an "...." event?") press "Yes", then it'll be removed from the scheduler, with no possibility to restore it again, except for creating a new one. If "No" is pressed, no
+changes are made in the planner, and all the following events are saved.
+
+
+### Filtering by name
+If you want all the meetings to be sorted by their participants, in the right top corner of the main page, use the filter named "Select participants". Choose a name from the list, and the table will show only the meetings with a corresponding participant 
+involved. While "All members" option is chosen from the list, the table demonstrates all the meetings booked.
+
