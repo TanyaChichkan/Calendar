@@ -1,4 +1,6 @@
-# Meeting calendar planner &middot; ![Technology](technology.png)
+# Meeting calendar planner  
+<!-- ![Technology](technology.png) -->
+<img src="technology.png" width="200" height="50"/> 
 
 ## Starting the app
 
