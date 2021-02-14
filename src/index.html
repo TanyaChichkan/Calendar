@@ -11,14 +11,15 @@
         <div class="container">
           <h1 class="page-title">Calendar</h1>
           <div class="button-wrapper">
-            <select name="members" id="members" class="name-selector">
+            <div class="select-wrapper">
+              <select name="members" id="members" class="name-selector">
                 <option value="Select participants" selected disabled>Select participants</option>
                 <option value="All">All members</option>
                 <option value="Maria">Maria</option>
                 <option value="Colin">Colin</option>
                 <option value="Tina">Tina</option>
-
-            </select>
+              </select>
+            </div>
             <button class="button-create button">New event +</button>
           </div>
         </div>
@@ -150,66 +151,17 @@
                     <div class="input-wrapper">
                         <input type="text" name="eventName" id="eventName" class="input" placeholder="Enter event name"/>
 
-                        <select id="participants" name="participants" class="form-select select" >
-                          <option value="Select participants" selected disabled>Select participants</option>
-                          <option value="Maria,Bob,Alex">Maria,Bob,Alex</option>
-                          <option value="Colin,Tina">Colin,Tina</option>
-                          <option value="All">All</option>
-                        </select>
-
-                        <select id="day" name="day" class="form-select select" >
-                          <option value="Select day" selected>Select day</option>
-                          <option value="Monday">Monday</option>
-                          <option value="Tuesday">Tuesday</option>
-                          <option value="Wednesday">Wednesday</option>
-                          <option value="Thursday">Thursday</option>
-                          <option value="Friday">Friday</option>
-                          <option value="Saturday">Saturday</option>
-                          <option value="Sunday">Sunday</option>
-                      </select>
-
-                      <select id="time" name="time" class="form-select select" >
-                        <option value="Select time" selected>Select time</option>
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="15:00">15:00</option>
-                        <option value="16:00">16:00</option>
-                        <option value="17:00">17:00</option>
-                        <option value="18:00">18:00</option>
-                      </select>
-
-                    </div>
-
-                  </div>
-
-                  <div class="form-button-wrapper">
-                    <button type="submit" class="button-submitter button" data-name="create">Create</button>
-                    <button type="button" class="button" data-name="cancel">Cancel</button>
-                  </div> 
-                  <span class="notification"></span>
-                  <!-- <div class="input-wrapper">
-                    <label for="eventName" class="label">Name of the event: 
-                        <input type="text" name="eventName" id="eventName" class="input"/>
-                    </label>
-                  </div>
-    
-                  <div class="input-wrapper">
-                    <label for="participants" class="label">Participants: 
-                        <select id="participants" name="participants">
-                            <option value="Select participants" selected>Select participants</option>
+                        <div class="select-wrapper">
+                          <select id="participants" name="participants" class="form-select select" >
+                            <option value="Select participants" selected disabled>Select participants</option>
                             <option value="Maria,Bob,Alex">Maria,Bob,Alex</option>
                             <option value="Colin,Tina">Colin,Tina</option>
                             <option value="All">All</option>
-                        </select>
-                    </label>
-                  </div>
-    
-                  <div class="input-wrapper">
-                    <label for="day" class="label">Day: 
-                        <select id="day" name="day">
+                          </select>
+                        </div>
+
+                        <div class="select-wrapper">
+                          <select id="day" name="day" class="form-select select" >
                             <option value="Select day" selected>Select day</option>
                             <option value="Monday">Monday</option>
                             <option value="Tuesday">Tuesday</option>
@@ -218,13 +170,11 @@
                             <option value="Friday">Friday</option>
                             <option value="Saturday">Saturday</option>
                             <option value="Sunday">Sunday</option>
-                        </select>
-                    </label>
-                  </div>
+                          </select>
+                        </div>
 
-                  <div class="input-wrapper">
-                    <label for="time" class="label">Time: 
-                        <select id="time" name="time">
+                        <div class="select-wrapper">
+                          <select id="time" name="time" class="form-select" >
                             <option value="Select time" selected>Select time</option>
                             <option value="10:00">10:00</option>
                             <option value="11:00">11:00</option>
@@ -235,10 +185,17 @@
                             <option value="16:00">16:00</option>
                             <option value="17:00">17:00</option>
                             <option value="18:00">18:00</option>
-                        </select>
-                    </label>
-                  </div> -->
-    
+                          </select>
+                        </div>
+                    </div>
+
+                  </div>
+
+                  <div class="form-button-wrapper">
+                    <button type="submit" class="button-submitter button" data-name="create">Create</button>
+                    <button type="button" class="button" data-name="cancel">Cancel</button>
+                  </div> 
+                  <span class="notification"></span>
                 </form>
 
             </div>
