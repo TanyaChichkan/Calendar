@@ -1,4 +1,4 @@
-# Meeting calendar planner &middot; [![Build Status](https://user-images.githubusercontent.com/30186107/29488525-f55a69d0-84da-11e7-8a39-5476f663b5eb.png)
+# Meeting calendar planner &middot; (https://lh3.googleusercontent.com/proxy/NzZVWRK29W_SWnxf1YmwrG0RKb_GahBqMYGozW9sEMalI5p6dQUCluQsnutLOT55-CO3Dnd-puHPxRL4S_6aRHPASUnOI1xdyh2ZfZx5iRqp6bmE3OExyyTFAex47bus9jo)
 
 ## Starting the app
 
@@ -9,7 +9,7 @@ It gives several options for an event creation/ choosing participants/ deleting 
 
 ### Setting up 
 
-&middot; To start working with the app on your computer, you should first clone/download the repository from GitHub
+* To start working with the app on your computer, you should first clone/download the repository from GitHub
 
 ```shell
 git clone https://github.com/TanyaChichkan/Calendar
@@ -27,7 +27,7 @@ Afterwards, start the app on the server.
 npm start
 ```
 
-&middot; To run the app from the browser, follow the link https://tanyachichkan.github.io/Calendar/
+* To run the app from the browser, follow the link https://tanyachichkan.github.io/Calendar/
 
 Follow the link in your browser
 [http://localhost:4040](http://localhost:4040).
