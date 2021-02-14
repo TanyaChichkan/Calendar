@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAEK,AAAD,cAAS,CAAA;EAET,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI;EAEX,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,IAAI;EACtB,KAAK,EAAE,GAAG;CACT;;AAEA,AAAD,WAAM,CAAA;EACF,MAAM,EAAC,CAAC;EACR,WAAW,EAAE,IAAI;CACpB;;AAEA,AAAD,YAAO,CAAA;EACH,OAAO,EAAE,KAAK;EACd,WAAW,EAAE,IAAI;CACpB",
-    "sources": [
-        "alertMessage.scss"
-    ],
-    "names": [],
-    "file": "alertMessage.css"
-}
