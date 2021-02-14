@@ -1,4 +1,4 @@
-# Meeting calendar planner &middot; (https://lh3.googleusercontent.com/proxy/NzZVWRK29W_SWnxf1YmwrG0RKb_GahBqMYGozW9sEMalI5p6dQUCluQsnutLOT55-CO3Dnd-puHPxRL4S_6aRHPASUnOI1xdyh2ZfZx5iRqp6bmE3OExyyTFAex47bus9jo)
+# Meeting calendar planner &middot; ![Technology](technology.png)
 
 ## Starting the app
 
